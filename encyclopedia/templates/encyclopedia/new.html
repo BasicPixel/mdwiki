@@ -9,9 +9,9 @@
 <form action="/new/save" method="POST">
     {% csrf_token %}
     <label for="title">Entry Title: </label>
-    <input type="text" name="title">
-    <textarea name="content" id="" cols="30" rows="10"></textarea>
-    <br>
-    <input type="submit">
+    <input type="text" name="title" id="title" class="form-control rounded-0 mb-2" required>
+    <label for="content">Content:</label>
+    <textarea name="content" id="content" rows="10" class="form-control rounded-0"></textarea>
+    <input type="submit" class="btn btn-info mt-2 rounded-0">
 </form>
 {% endblock %}

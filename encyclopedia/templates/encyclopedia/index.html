@@ -7,9 +7,9 @@
 {% block body %}
     <h1>All Pages</h1>
 
-    <ul>
+    <ul class="list-group list-unstyled mt-3">
         {% for entry in entries %}
-            <li><a href="/wiki/{{entry}}">{{ entry }}</a></li>
+            <li><a href="/wiki/{{entry}}" class="list-group-item list-group-item-action">{{ entry }}</a></li>
         {% endfor %}
     </ul>
 

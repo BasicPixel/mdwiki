@@ -7,8 +7,7 @@
 <h3>Edit Page: {{ entry }}</h3>
 <form action="/wiki/save/{{entry}}" method="POST">
     {% csrf_token %}
-    <textarea name="edited">{{ content }}</textarea>
-    <br>
-    <input type="submit">
+    <textarea name="edited" class="form-control rounded-0">{{ content }}</textarea>
+    <input type="submit" class="btn btn-info mt-2 rounded-0">
 </form>
 {% endblock %}
